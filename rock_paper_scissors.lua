@@ -390,31 +390,3 @@ function Game_model:new()
     setmetatable(obj, self)
     return obj
 end
-
- Storage_sound = {}
- --[[
-    sound data
- ]]
- function Storage_sound:new()
-    local obj = {}
-    self.__index = self
-    obj.m_cursor = {
-        idle        = 53,
-        rock        = 48,
-        scissors    = 32,
-        paper       = 16
-    }
-    obj.button = 1
-    obj.monitor ={
-        player  = 8,
-        ai      = 12
-    }
-    obj.icon = {
-        rock        = 68,
-        scissors    = 64,
-        paper       = 72
-    }
-
-    setmetatable(obj, self)
-    return obj
- end
